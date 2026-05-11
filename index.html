@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔴 LIVE ASIAN CAMS - All Models</title>
+  <style>
+    :root {
+      --neon-pink: #ff00ff;
+      --neon-blue: #00f0ff;
+      --neon-purple: #9d00ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0a0a14;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+      background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 0, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(0, 240, 255, 0.08) 0%, transparent 50%);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      margin: 20px 0 8px;
+      background: linear-gradient(90deg, var(--neon-pink), var(--neon-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
+    }
+
+    .subtitle { text-align: center; color: #aaa; font-size: 1.1em; margin-bottom: 40px; }
+
+    .container { max-width: 1680px; margin: 0 auto; }
+
+    .models-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .model-card {
+      background: #12121f;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid #222;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+
+    .model-card:hover {
+      transform: translateY(-12px) scale(1.03);
+      border-color: var(--neon-pink);
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.4);
+    }
+
+    .thumbnail-container {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      background: #000;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .play-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: rgba(255,255,255,0.9);
+      text-shadow: 0 0 20px rgba(0,0,0,0.8);
+      pointer-events: none;
+    }
+
+    .model-info {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .model-name {
+      font-size: 1.35em;
+      font-weight: bold;
+      color: white;
+      margin: 8px 0 12px;
+    }
+
+    .status {
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 0.95em;
+      display: inline-block;
+      margin-bottom: 12px;
+      background: #c80000;
+      color: white;
+      box-shadow: 0 0 12px #ff4444;
+    }
+
+    .chat-btn {
+      background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1.05em;
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+      transition: all 0.2s;
+    }
+
+    .chat-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.9);
+    }
+
+    .refresh-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #1a1a2e;
+      color: var(--neon-blue);
+      border: 2px solid var(--neon-blue);
+      padding: 12px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 100;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 80px;
+      color: #555;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔴 LIVE ASIAN CAMS</h1>
+    <p class="subtitle">All Sexy Asian Models — Click thumbnail to play video</p>
+
+    <div class="models-grid" id="models-grid"></div>
+  </div>
+
+  <button class="refresh-btn" onclick="location.reload()">🔄 Refresh</button>
+
+  <div class="footer">
+    <p>18+ Only • All models are 18 years or older</p>
+    <p>
+      <a href="https://www.lbfmcams.com/onnow.php?wid=104247&cid=100&rid=1" target="_blank">LBFMCams</a> | 
+      <a href="https://www.bargirlchat.com/onnow.php?wid=104247&cid=100&rid=1" target="_blank">BarGirlChat</a>
+    </p>
+  </div>
+
+  <script>
+    // Auto-refresh
+    setTimeout(() => location.reload(), 90000);
+
+    const models = [
+      { name: "Foxy", img: "https://content.camdough.com/exvids/hc_Foxy_01.jpg", video: "https://content.camdough.com/exvids/hc_Foxy_01.mp4" },
+      { name: "Felicity", img: "https://content.camdough.com/exvids/hc_Felicity_01.jpg", video: "https://content.camdough.com/exvids/hc_Felicity_01.mp4" },
+      { name: "Eve", img: "https://content.camdough.com/exvids/hc_Eve_02.jpg", video: "https://content.camdough.com/exvids/hc_Eve_02.mp4" },
+      { name: "Emelyn", img: "https://content.camdough.com/exvids/hc_Emelyn_06.jpg", video: "https://content.camdough.com/exvids/hc_Emelyn_06.mp4" },
+      { name: "Doreen", img: "https://content.camdough.com/exvids/hc_Doreen_01.jpg", video: "https://content.camdough.com/exvids/hc_Doreen_01.mp4" },
+      { name: "Carmelita", img: "https://content.camdough.com/exvids/hc_Carmelita_01.jpg", video: "https://content.camdough.com/exvids/hc_Carmelita_01.mp4" },
+      { name: "Ashley", img: "https://content.camdough.com/exvids/hc_Ashley_02.jpg", video: "https://content.camdough.com/exvids/hc_Ashley_02.mp4" },
+      { name: "Annette", img: "https://content.camdough.com/exvids/hc_Annette_01.jpg", video: "https://content.camdough.com/exvids/hc_Annette_01.mp4" },
+      { name: "Andrea", img: "https://content.camdough.com/exvids/hc_Andrea_03.jpg", video: "https://content.camdough.com/exvids/hc_Andrea_03.mp4" },
+      { name: "Sophie", img: "https://content.camdough.com/exvids/hc_Sophie_01.jpg", video: "https://content.camdough.com/exvids/hc_Sophie_01.mp4" },
+      { name: "Fiona", img: "https://content.camdough.com/exvids/hc_Fiona_02.jpg", video: "https://content.camdough.com/exvids/hc_Fiona_02.mp4" },
+      { name: "Evelyn", img: "https://content.camdough.com/exvids/hc_Evelyn_01.jpg", video: "https://content.camdough.com/exvids/hc_Evelyn_01.mp4" },
+      { name: "Debbie", img: "https://content.camdough.com/exvids/hc_Debbie_01.jpg", video: "https://content.camdough.com/exvids/hc_Debbie_01.mp4" },
+      { name: "Christine", img: "https://content.camdough.com/exvids/hc_Christine_01.jpg", video: "https://content.camdough.com/exvids/hc_Christine_01.mp4" },
+      { name: "Brandi", img: "https://content.camdough.com/exvids/hc_Brandi_01.jpg", video: "https://content.camdough.com/exvids/hc_Brandi_01.mp4" },
+      { name: "Athena", img: "https://content.camdough.com/exvids/hc_Athena_02.jpg", video: "https://content.camdough.com/exvids/hc_Athena_02.mp4" },
+      { name: "Angelina", img: "https://content.camdough.com/exvids/hc_Angelina_01.jpg", video: "https://content.camdough.com/exvids/hc_Angelina_01.mp4" },
+      { name: "Roxy", img: "https://content.camdough.com/exvids/hc_Roxy_04.jpg", video: "https://content.camdough.com/exvids/hc_Roxy_04.mp4" },
+      { name: "Phoebe", img: "https://content.camdough.com/exvids/hc_Phoebe_02.jpg", video: "https://content.camdough.com/exvids/hc_Phoebe_02.mp4" },
+      { name: "Natasha", img: "https://content.camdough.com/exvids/hc_Natasha_03.jpg", video: "https://content.camdough.com/exvids/hc_Natasha_03.mp4" },
+      { name: "NastyCouple", img: "https://content.camdough.com/exvids/hc_NastyCouple_02.jpg", video: "https://content.camdough.com/exvids/hc_NastyCouple_02.mp4" },
+      { name: "Bibing", img: "https://content.camdough.com/exvids/hc_Bibing_01.jpg", video: "https://content.camdough.com/exvids/hc_Bibing_01.mp4" },
+      { name: "Mary", img: "https://content.camdough.com/exvids/hc_Mary_03.jpg", video: "https://content.camdough.com/exvids/hc_Mary_03.mp4" },
+      { name: "Marjorie", img: "https://content.camdough.com/exvids/hc_Marjorie_01.jpg", video: "https://content.camdough.com/exvids/hc_Marjorie_01.mp4" },
+      { name: "Dawn", img: "https://content.camdough.com/exvids/hc_Dawn_01.jpg", video: "https://content.camdough.com/exvids/hc_Dawn_01.mp4" },
+      { name: "Marie", img: "https://content.camdough.com/exvids/hc_Marie_04.jpg", video: "https://content.camdough.com/exvids/hc_Marie_04.mp4" },
+      { name: "Kira", img: "https://content.camdough.com/exvids/hc_Kira_02.jpg", video: "https://content.camdough.com/exvids/hc_Kira_02.mp4" },
+      { name: "Julia", img: "https://content.camdough.com/exvids/hc_Julia_03.jpg", video: "https://content.camdough.com/exvids/hc_Julia_03.mp4" },
+      { name: "Gemma", img: "https://content.camdough.com/exvids/hc_Gemma_03.jpg", video: "https://content.camdough.com/exvids/hc_Gemma_03.mp4" },
+      { name: "Paulina", img: "https://content.camdough.com/exvids/hc_Paulina_02.jpg", video: "https://content.camdough.com/exvids/hc_Paulina_02.mp4" },
+      { name: "Mylene", img: "https://content.camdough.com/exvids/hc_Mylene_04.jpg", video: "https://content.camdough.com/exvids/hc_Mylene_04.mp4" },
+      { name: "Kim", img: "https://content.camdough.com/exvids/hc_Kim_05.jpg", video: "https://content.camdough.com/exvids/hc_Kim_05.mp4" },
+      { name: "Dana", img: "https://content.camdough.com/exvids/hc_Dana_04.jpg", video: "https://content.camdough.com/exvids/hc_Dana_04.mp4" },
+      { name: "Kate", img: "https://content.camdough.com/exvids/hc_Kate_05.jpg", video: "https://content.camdough.com/exvids/hc_Kate_05.mp4" },
+      { name: "Angel", img: "https://content.camdough.com/exvids/hc_Angel_04.jpg", video: "https://content.camdough.com/exvids/hc_Angel_04.mp4" },
+      { name: "Leslie", img: "https://content.camdough.com/exvids/hc_Leslie_02.jpg", video: "https://content.camdough.com/exvids/hc_Leslie_02.mp4" },
+      { name: "Laura", img: "https://content.camdough.com/exvids/hc_Laura_01.jpg", video: "https://content.camdough.com/exvids/hc_Laura_01.mp4" },
+      { name: "Kelly", img: "https://content.camdough.com/exvids/hc_Kelly_03.jpg", video: "https://content.camdough.com/exvids/hc_Kelly_03.mp4" },
+      { name: "Jacky", img: "https://content.camdough.com/exvids/hc_Jacky_02.jpg", video: "https://content.camdough.com/exvids/hc_Jacky_02.mp4" },
+      { name: "Eva", img: "https://content.camdough.com/exvids/hc_Eva_03.jpg", video: "https://content.camdough.com/exvids/hc_Eva_03.mp4" },
+      { name: "Liezel", img: "https://content.camdough.com/exvids/hc_Liezel_02.jpg", video: "https://content.camdough.com/exvids/hc_Liezel_02.mp4" },
+      { name: "Jennifer", img: "https://content.camdough.com/exvids/hc_Jennifer_02.jpg", video: "https://content.camdough.com/exvids/hc_Jennifer_02.mp4" },
+      { name: "Grace", img: "https://content.camdough.com/exvids/hc_Grace_04.jpg", video: "https://content.camdough.com/exvids/hc_Grace_04.mp4" },
+      { name: "Crystal", img: "https://content.camdough.com/exvids/hc_Crystal_03.jpg", video: "https://content.camdough.com/exvids/hc_Crystal_03.mp4" },
+      { name: "Caroline", img: "https://content.camdough.com/exvids/hc_Caroline_04.jpg", video: "https://content.camdough.com/exvids/hc_Caroline_04.mp4" },
+      { name: "Candice", img: "https://content.camdough.com/exvids/hc_Candice_01.jpg", video: "https://content.camdough.com/exvids/hc_Candice_01.mp4" },
+      { name: "Francesca", img: "https://content.camdough.com/exvids/hc_Francesca_01.jpg", video: "https://content.camdough.com/exvids/hc_Francesca_01.mp4" },
+      { name: "DiDi", img: "https://content.camdough.com/exvids/hc_DiDi_04.jpg", video: "https://content.camdough.com/exvids/hc_DiDi_04.mp4" },
+      { name: "Bonnie", img: "https://content.camdough.com/exvids/hc_Bonnie_01.jpg", video: "https://content.camdough.com/exvids/hc_Bonnie_01.mp4" },
+      { name: "Leah", img: "https://content.camdough.com/exvids/hc_Leah_03.jpg", video: "https://content.camdough.com/exvids/hc_Leah_03.mp4" },
+      { name: "Lacey", img: "https://content.camdough.com/exvids/hc_Lacey_01.jpg", video: "https://content.camdough.com/exvids/hc_Lacey_01.mp4" },
+      { name: "Christy", img: "https://content.camdough.com/exvids/hc_Christy_02.jpg", video: "https://content.camdough.com/exvids/hc_Christy_02.mp4" },
+      { name: "Bambi", img: "https://content.camdough.com/exvids/hc_Bambi_02.jpg", video: "https://content.camdough.com/exvids/hc_Bambi_02.mp4" },
+      { name: "Anna", img: "https://content.camdough.com/exvids/hc_Anna_04.jpg", video: "https://content.camdough.com/exvids/hc_Anna_04.mp4" },
+      { name: "Tara", img: "https://content.camdough.com/exvids/hc_Tara_01.jpg", video: "https://content.camdough.com/exvids/hc_Tara_01.mp4" },
+      { name: "Sheila", img: "https://content.camdough.com/exvids/hc_Sheila_01.jpg", video: "https://content.camdough.com/exvids/hc_Sheila_01.mp4" },
+      { name: "Rowena", img: "https://content.camdough.com/exvids/hc_Rowena_03.jpg", video: "https://content.camdough.com/exvids/hc_Rowena_03.mp4" },
+      { name: "Maribel", img: "https://content.camdough.com/exvids/hc_Maribel_01.jpg", video: "https://content.camdough.com/exvids/hc_Maribel_01.mp4" },
+      { name: "Lexi", img: "https://content.camdough.com/exvids/hc_Lexi_01.jpg", video: "https://content.camdough.com/exvids/hc_Lexi_01.mp4" },
+      { name: "Janine", img: "https://content.camdough.com/exvids/hc_Janine_02.jpg", video: "https://content.camdough.com/exvids/hc_Janine_02.mp4" },
+      { name: "Gina", img: "https://content.camdough.com/exvids/hc_Gina_03.jpg", video: "https://content.camdough.com/exvids/hc_Gina_03.mp4" },
+      { name: "Vicky", img: "https://content.camdough.com/exvids/hc_Vicky_02.jpg", video: "https://content.camdough.com/exvids/hc_Vicky_02.mp4" },
+      { name: "Trina", img: "https://content.camdough.com/exvids/hc_Trina_01.jpg", video: "https://content.camdough.com/exvids/hc_Trina_01.mp4" },
+      { name: "Tracy", img: "https://content.camdough.com/exvids/hc_Tracy_01.jpg", video: "https://content.camdough.com/exvids/hc_Tracy_01.mp4" },
+      { name: "Tina", img: "https://content.camdough.com/exvids/hc_Tina_02.jpg", video: "https://content.camdough.com/exvids/hc_Tina_02.mp4" },
+      { name: "Sandy", img: "https://content.camdough.com/exvids/hc_Sandy_01.jpg", video: "https://content.camdough.com/exvids/hc_Sandy_01.mp4" },
+      { name: "Rhea", img: "https://content.camdough.com/exvids/hc_Rhea_03.jpg", video: "https://content.camdough.com/exvids/hc_Rhea_03.mp4" },
+      { name: "Pauline", img: "https://content.camdough.com/exvids/hc_Pauline_01.jpg", video: "https://content.camdough.com/exvids/hc_Pauline_01.mp4" },
+      { name: "Nina", img: "https://content.camdough.com/exvids/hc_Nina_02.jpg", video: "https://content.camdough.com/exvids/hc_Nina_02.mp4" },
+      { name: "Mya", img: "https://content.camdough.com/exvids/hc_Mya_02.jpg", video: "https://content.camdough.com/exvids/hc_Mya_02.mp4" },
+      { name: "Lisa", img: "https://content.camdough.com/exvids/hc_Lisa_01.jpg", video: "https://content.camdough.com/exvids/hc_Lisa_01.mp4" },
+      { name: "Faith", img: "https://content.camdough.com/exvids/hc_Faith_02.jpg", video: "https://content.camdough.com/exvids/hc_Faith_02.mp4" },
+      { name: "Ellen", img: "https://content.camdough.com/exvids/hc_Ellen_01.jpg", video: "https://content.camdough.com/exvids/hc_Ellen_01.mp4" },
+      { name: "Daisy", img: "https://content.camdough.com/exvids/hc_Daisy_04.jpg", video: "https://content.camdough.com/exvids/hc_Daisy_04.mp4" },
+      { name: "Claudia", img: "https://content.camdough.com/exvids/hc_Claudia_02.jpg", video: "https://content.camdough.com/exvids/hc_Claudia_02.mp4" },
+      { name: "Chloe", img: "https://content.camdough.com/exvids/hc_Chloe_02.jpg", video: "https://content.camdough.com/exvids/hc_Chloe_02.mp4" },
+      { name: "Aria", img: "https://content.camdough.com/exvids/hc_Aria_01.jpg", video: "https://content.camdough.com/exvids/hc_Aria_01.mp4" },
+      { name: "Diane", img: "https://content.camdough.com/exvids/hc_Diane_01.jpg", video: "https://content.camdough.com/exvids/hc_Diane_01.mp4" },
+      { name: "Carla", img: "https://content.camdough.com/exvids/hc_Carla_03.jpg", video: "https://content.camdough.com/exvids/hc_Carla_03.mp4" },
+      { name: "Candy", img: "https://content.camdough.com/exvids/hc_Candy_03.jpg", video: "https://content.camdough.com/exvids/hc_Candy_03.mp4" },
+      { name: "Bing", img: "https://content.camdough.com/exvids/hc_Bing_03.jpg", video: "https://content.camdough.com/exvids/hc_Bing_03.mp4" },
+      { name: "Bee", img: "https://content.camdough.com/exvids/hc_Bee_02.jpg", video: "https://content.camdough.com/exvids/hc_Bee_02.mp4" },
+      { name: "Aya", img: "https://content.camdough.com/exvids/hc_Aya_01.jpg", video: "https://content.camdough.com/exvids/hc_Aya_01.mp4" },
+      { name: "Aiko", img: "https://content.camdough.com/exvids/hc_Aiko_03.jpg", video: "https://content.camdough.com/exvids/hc_Aiko_03.mp4" },
+      { name: "Janet", img: "https://content.camdough.com/exvids/hc_Janet_02.jpg", video: "https://content.camdough.com/exvids/hc_Janet_02.mp4" },
+      { name: "Isabel", img: "https://content.camdough.com/exvids/hc_Isabel_03.jpg", video: "https://content.camdough.com/exvids/hc_Isabel_03.mp4" },
+      { name: "Helena", img: "https://content.camdough.com/exvids/hc_Helena_02.jpg", video: "https://content.camdough.com/exvids/hc_Helena_02.mp4" },
+      { name: "Hazel", img: "https://content.camdough.com/exvids/hc_Hazel_01.jpg", video: "https://content.camdough.com/exvids/hc_Hazel_01.mp4" },
+      { name: "Cindy", img: "https://content.camdough.com/exvids/hc_Cindy_02.jpg", video: "https://content.camdough.com/exvids/hc_Cindy_02.mp4" },
+      { name: "Mon", img: "https://content.camdough.com/exvids/hc_Mon_01.jpg", video: "https://content.camdough.com/exvids/hc_Mon_01.mp4" },
+      { name: "Wan", img: "https://content.camdough.com/exvids/hc_Wan_01.jpg", video: "https://content.camdough.com/exvids/hc_Wan_01.mp4" },
+      { name: "Myra", img: "https://content.camdough.com/exvids/hc_Myra_02.jpg", video: "https://content.camdough.com/exvids/hc_Myra_02.mp4" },
+      { name: "Kayla", img: "https://content.camdough.com/exvids/hc_Kayla_01.jpg", video: "https://content.camdough.com/exvids/hc_Kayla_01.mp4" },
+      { name: "Jean", img: "https://content.camdough.com/exvids/hc_Jean_02.jpg", video: "https://content.camdough.com/exvids/hc_Jean_02.mp4" },
+      { name: "Brianna", img: "https://content.camdough.com/exvids/hc_Brianna_02.jpg", video: "https://content.camdough.com/exvids/hc_Brianna_02.mp4" },
+      { name: "Viola", img: "https://content.camdough.com/exvids/hc_Viola_01.jpg", video: "https://content.camdough.com/exvids/hc_Viola_01.mp4" },
+      { name: "Sunny", img: "https://content.camdough.com/exvids/hc_Sunny_01.jpg", video: "https://content.camdough.com/exvids/hc_Sunny_01.mp4" },
+      { name: "Nora", img: "https://content.camdough.com/exvids/hc_Nora_02.jpg", video: "https://content.camdough.com/exvids/hc_Nora_02.mp4" },
+      { name: "Nica", img: "https://content.camdough.com/exvids/hc_Nica_01.jpg", video: "https://content.camdough.com/exvids/hc_Nica_01.mp4" },
+      { name: "Natalie", img: "https://content.camdough.com/exvids/hc_Natalie_01.jpg", video: "https://content.camdough.com/exvids/hc_Natalie_01.mp4" },
+      { name: "Honey", img: "https://content.camdough.com/exvids/hc_Honey_02.jpg", video: "https://content.camdough.com/exvids/hc_Honey_02.mp4" },
+      { name: "Eunice", img: "https://content.camdough.com/exvids/hc_Eunice_01.jpg", video: "https://content.camdough.com/exvids/hc_Eunice_01.mp4" },
+      { name: "Cyberkim", img: "https://content.camdough.com/exvids/hc_Cyberkim_01.jpg", video: "https://content.camdough.com/exvids/hc_Cyberkim_01.mp4" },
+      { name: "Elisa", img: "https://content.camdough.com/exvids/hc_Elisa_02.jpg", video: "https://content.camdough.com/exvids/hc_Elisa_02.mp4" },
+      { name: "Laurel", img: "https://content.camdough.com/exvids/hc_Laurel_01.jpg", video: "https://content.camdough.com/exvids/hc_Laurel_01.mp4" },
+      { name: "Kaylee", img: "https://content.camdough.com/exvids/hc_Kaylee_01.jpg", video: "https://content.camdough.com/exvids/hc_Kaylee_01.mp4" },
+      { name: "Jessa", img: "https://content.camdough.com/exvids/hc_Jessa_01.jpg", video: "https://content.camdough.com/exvids/hc_Jessa_01.mp4" },
+      { name: "Anisa", img: "https://content.camdough.com/exvids/hc_Anisa_01.jpg", video: "https://content.camdough.com/exvids/hc_Anisa_01.mp4" },
+      { name: "Asia", img: "https://content.camdough.com/exvids/hc_Asia_02.jpg", video: "https://content.camdough.com/exvids/hc_Asia_02.mp4" },
+      { name: "Betty", img: "https://content.camdough.com/exvids/hc_Betty_01.jpg", video: "https://content.camdough.com/exvids/hc_Betty_01.mp4" },
+      { name: "Carol", img: "https://content.camdough.com/exvids/hc_Carol_01.jpg", video: "https://content.camdough.com/exvids/hc_Carol_01.mp4" },
+      { name: "Fon", img: "https://content.camdough.com/exvids/hc_Fon_01.jpg", video: "https://content.camdough.com/exvids/hc_Fon_01.mp4" },
+      { name: "HotLovers", img: "https://content.camdough.com/exvids/hc_HotLovers_01.jpg", video: "https://content.camdough.com/exvids/hc_HotLovers_01.mp4" },
+      { name: "Kimmy", img: "https://content.camdough.com/exvids/hc_Kimmy_02.jpg", video: "https://content.camdough.com/exvids/hc_Kimmy_02.mp4" },
+      { name: "Maricar", img: "https://content.camdough.com/exvids/hc_Maricar_03.jpg", video: "https://content.camdough.com/exvids/hc_Maricar_03.mp4" },
+      { name: "Zelda", img: "https://content.camdough.com/exvids/hc_Zelda_02.jpg", video: "https://content.camdough.com/exvids/hc_Zelda_02.mp4" },
+      { name: "Trisha", img: "https://content.camdough.com/exvids/hc_Trisha_01.jpg", video: "https://content.camdough.com/exvids/hc_Trisha_01.mp4" },
+      { name: "Princess", img: "https://content.camdough.com/exvids/hc_Princess_01.jpg", video: "https://content.camdough.com/exvids/hc_Princess_01.mp4" },
+      { name: "Nadia", img: "https://content.camdough.com/exvids/hc_Nadia_01.jpg", video: "https://content.camdough.com/exvids/hc_Nadia_01.mp4" },
+      { name: "Mona", img: "https://content.camdough.com/exvids/hc_Mona_01.jpg", video: "https://content.camdough.com/exvids/hc_Mona_01.mp4" },
+      { name: "Maryann", img: "https://content.camdough.com/exvids/hc_Maryann_01.jpg", video: "https://content.camdough.com/exvids/hc_Maryann_01.mp4" },
+      { name: "Lillian", img: "https://content.camdough.com/exvids/hc_Lillian_01.jpg", video: "https://content.camdough.com/exvids/hc_Lillian_01.mp4" },
+      { name: "Jopay", img: "https://content.camdough.com/exvids/hc_Jopay_01.jpg", video: "https://content.camdough.com/exvids/hc_Jopay_01.mp4" },
+      { name: "Ginger", img: "https://content.camdough.com/exvids/hc_Ginger_02.jpg", video: "https://content.camdough.com/exvids/hc_Ginger_02.mp4" },
+      { name: "Frieda", img: "https://content.camdough.com/exvids/hc_Frieda_01.jpg", video: "https://content.camdough.com/exvids/hc_Frieda_01.mp4" },
+      { name: "Brittany", img: "https://content.camdough.com/exvids/hc_Brittany_01.jpg", video: "https://content.camdough.com/exvids/hc_Brittany_01.mp4" },
+      { name: "Perla", img: "https://content.camdough.com/exvids/hc_Perla_02.jpg", video: "https://content.camdough.com/exvids/hc_Perla_02.mp4" },
+      { name: "Myrna", img: "https://content.camdough.com/exvids/hc_Myrna_03.jpg", video: "https://content.camdough.com/exvids/hc_Myrna_03.mp4" },
+      { name: "Maria", img: "https://content.camdough.com/exvids/hc_Maria_02.jpg", video: "https://content.camdough.com/exvids/hc_Maria_02.mp4" },
+      { name: "Elvie", img: "https://content.camdough.com/exvids/hc_Elvie_01.jpg", video: "https://content.camdough.com/exvids/hc_Elvie_01.mp4" },
+      { name: "Roxanne", img: "https://content.camdough.com/exvids/hc_Roxanne_01.jpg", video: "https://content.camdough.com/exvids/hc_Roxanne_01.mp4" },
+      { name: "Raven", img: "https://content.camdough.com/exvids/hc_Raven_02.jpg", video: "https://content.camdough.com/exvids/hc_Raven_02.mp4" },
+      { name: "Katherine", img: "https://content.camdough.com/exvids/hc_Katherine_01.jpg", video: "https://content.camdough.com/exvids/hc_Katherine_01.mp4" },
+      { name: "Ella", img: "https://content.camdough.com/exvids/hc_Ella_01.jpg", video: "https://content.camdough.com/exvids/hc_Ella_01.mp4" },
+      { name: "April", img: "https://content.camdough.com/exvids/hc_April_02.jpg", video: "https://content.camdough.com/exvids/hc_April_02.mp4" },
+      { name: "Winnie", img: "https://content.camdough.com/exvids/hc_Winnie_01.jpg", video: "https://content.camdough.com/exvids/hc_Winnie_01.mp4" },
+      { name: "Raquel", img: "https://content.camdough.com/exvids/hc_Raquel_02.jpg", video: "https://content.camdough.com/exvids/hc_Raquel_02.mp4" },
+      { name: "Marilyn", img: "https://content.camdough.com/exvids/hc_Marilyn_02.jpg", video: "https://content.camdough.com/exvids/hc_Marilyn_02.mp4" },
+      { name: "Gemma", img: "https://content.camdough.com/exvids/hc_Gemma_02.jpg", video: "https://content.camdough.com/exvids/hc_Gemma_02.mp4" },
+      { name: "Victoria", img: "https://content.camdough.com/exvids/hc_Victoria_02.jpg", video: "https://content.camdough.com/exvids/hc_Victoria_02.mp4" },
+      { name: "Stacy", img: "https://content.camdough.com/exvids/hc_Stacy_01.jpg", video: "https://content.camdough.com/exvids/hc_Stacy_01.mp4" },
+      { name: "Maribeth", img: "https://content.camdough.com/exvids/hc_Maribeth_01.jpg", video: "https://content.camdough.com/exvids/hc_Maribeth_01.mp4" },
+      { name: "Kyla", img: "https://content.camdough.com/exvids/hc_Kyla_01.jpg", video: "https://content.camdough.com/exvids/hc_Kyla_01.mp4" },
+      { name: "Jonalyn", img: "https://content.camdough.com/exvids/hc_Jonalyn_02.jpg", video: "https://content.camdough.com/exvids/hc_Jonalyn_02.mp4" },
+      { name: "Helena", img: "https://content.camdough.com/exvids/hc_Helena_01.jpg", video: "https://content.camdough.com/exvids/hc_Helena_01.mp4" },
+      { name: "Alice", img: "https://content.camdough.com/exvids/hc_Alice_01.jpg", video: "https://content.camdough.com/exvids/hc_Alice_01.mp4" },
+      { name: "Rehannah", img: "https://content.camdough.com/exvids/hc_Rehannah_01.jpg", video: "https://content.camdough.com/exvids/hc_Rehannah_01.mp4" },
+      { name: "Liza", img: "https://content.camdough.com/exvids/hc_Liza_01.jpg", video: "https://content.camdough.com/exvids/hc_Liza_01.mp4" },
+      { name: "Jenny", img: "https://content.camdough.com/exvids/hc_Jenny_01.jpg", video: "https://content.camdough.com/exvids/hc_Jenny_01.mp4" },
+      { name: "Irene", img: "https://content.camdough.com/exvids/hc_Irene_01.jpg", video: "https://content.camdough.com/exvids/hc_Irene_01.mp4" },
+      { name: "Emily", img: "https://content.camdough.com/exvids/hc_Emily_01.jpg", video: "https://content.camdough.com/exvids/hc_Emily_01.mp4" },
+      { name: "Samantha", img: "https://content.camdough.com/exvids/hc_Samantha_01.jpg", video: "https://content.camdough.com/exvids/hc_Samantha_01.mp4" },
+      { name: "Rochelle", img: "https://content.camdough.com/exvids/hc_Rochelle_01.jpg", video: "https://content.camdough.com/exvids/hc_Rochelle_01.mp4" },
+      { name: "Janie", img: "https://content.camdough.com/exvids/hc_Janie_02.jpg", video: "https://content.camdough.com/exvids/hc_Janie_02.mp4" },
+      { name: "Hilda", img: "https://content.camdough.com/exvids/hc_Hilda_01.jpg", video: "https://content.camdough.com/exvids/hc_Hilda_01.mp4" },
+      { name: "Amber", img: "https://content.camdough.com/exvids/hc_Amber_01.jpg", video: "https://content.camdough.com/exvids/hc_Amber_01.mp4" },
+      { name: "Jade", img: "https://content.camdough.com/exvids/hc_Jade_01.jpg", video: "https://content.camdough.com/exvids/hc_Jade_01.mp4" },
+      { name: "Mina", img: "https://content.camdough.com/exvids/hc_Mina_01.jpg", video: "https://content.camdough.com/exvids/hc_Mina_01.mp4" },
+      { name: "Lisbeth", img: "https://content.camdough.com/exvids/hc_Lisbeth_01.jpg", video: "https://content.camdough.com/exvids/hc_Lisbeth_01.mp4" },
+      { name: "Jane", img: "https://content.camdough.com/exvids/hc_Jane_01.jpg", video: "https://content.camdough.com/exvids/hc_Jane_01.mp4" },
+      { name: "Gia", img: "https://content.camdough.com/exvids/hc_Gia_01.jpg", video: "https://content.camdough.com/exvids/hc_Gia_01.mp4" },
+      { name: "Elena", img: "https://content.camdough.com/exvids/hc_Elena_01.jpg", video: "https://content.camdough.com/exvids/hc_Elena_01.mp4" },
+      { name: "Valerie", img: "https://content.camdough.com/exvids/hc_Valerie_03.jpg", video: "https://content.camdough.com/exvids/hc_Valerie_03.mp4" },
+      { name: "Trixie", img: "https://content.camdough.com/exvids/hc_Trixie_02.jpg", video: "https://content.camdough.com/exvids/hc_Trixie_02.mp4" },
+      { name: "Svetlana", img: "https://content.camdough.com/exvids/hc_Svetlana_01.jpg", video: "https://content.camdough.com/exvids/hc_Svetlana_01.mp4" },
+      { name: "Sandra", img: "https://content.camdough.com/exvids/hc_Sandra_01.jpg", video: "https://content.camdough.com/exvids/hc_Sandra_01.mp4" },
+      { name: "Rihanna", img: "https://content.camdough.com/exvids/hc_Rihanna_01.jpg", video: "https://content.camdough.com/exvids/hc_Rihanna_01.mp4" },
+      { name: "Rebecca", img: "https://content.camdough.com/exvids/hc_Rebecca_01.jpg", video: "https://content.camdough.com/exvids/hc_Rebecca_01.mp4" },
+      { name: "Phoebe", img: "https://content.camdough.com/exvids/hc_Phoebe_01.jpg", video: "https://content.camdough.com/exvids/hc_Phoebe_01.mp4" },
+      { name: "Monique", img: "https://content.camdough.com/exvids/hc_Monique_01.jpg", video: "https://content.camdough.com/exvids/hc_Monique_01.mp4" },
+      { name: "Maureen", img: "https://content.camdough.com/exvids/hc_Maureen_01.jpg", video: "https://content.camdough.com/exvids/hc_Maureen_01.mp4" },
+      { name: "Lynn", img: "https://content.camdough.com/exvids/hc_Lynn_01.jpg", video: "https://content.camdough.com/exvids/hc_Lynn_01.mp4" },
+      { name: "Lorna", img: "https://content.camdough.com/exvids/hc_Lorna_04.jpg", video: "https://content.camdough.com/exvids/hc_Lorna_04.mp4" },
+      { name: "Leanne", img: "https://content.camdough.com/exvids/hc_Leanne_01.jpg", video: "https://content.camdough.com/exvids/hc_Leanne_01.mp4" },
+      { name: "Judith", img: "https://content.camdough.com/exvids/hc_Judith_02.jpg", video: "https://content.camdough.com/exvids/hc_Judith_02.mp4" },
+      { name: "Joanne", img: "https://content.camdough.com/exvids/hc_Joanne_02.jpg", video: "https://content.camdough.com/exvids/hc_Joanne_02.mp4" },
+      { name: "Gretchen", img: "https://content.camdough.com/exvids/hc_Gretchen_01.jpg", video: "https://content.camdough.com/exvids/hc_Gretchen_01.mp4" },
+      { name: "Danielle", img: "https://content.camdough.com/exvids/hc_Danielle_01.jpg", video: "https://content.camdough.com/exvids/hc_Danielle_01.mp4" },
+      { name: "Beth", img: "https://content.camdough.com/exvids/hc_Beth_02.jpg", video: "https://content.camdough.com/exvids/hc_Beth_02.mp4" },
+      { name: "StarAngel", img: "https://content.camdough.com/exvids/hc_StarAngel_01.jpg", video: "https://content.camdough.com/exvids/hc_StarAngel_01.mp4" },
+      { name: "Pooni", img: "https://content.camdough.com/exvids/hc_Pooni_01.jpg", video: "https://content.camdough.com/exvids/hc_Pooni_01.mp4" },
+      { name: "LanaLee", img: "https://content.camdough.com/exvids/hc_LanaLee_02.jpg", video: "https://content.camdough.com/exvids/hc_LanaLee_02.mp4" },
+      { name: "Jerica", img: "https://content.camdough.com/exvids/hc_Jerica_01.jpg", video: "https://content.camdough.com/exvids/hc_Jerica_01.mp4" },
+      { name: "Athena", img: "https://content.camdough.com/exvids/hc_Athena_01.jpg", video: "https://content.camdough.com/exvids/hc_Athena_01.mp4" }
+    ];
+
+    function createCard(model) {
+      const card = document.createElement('div');
+      card.className = 'model-card';
+      card.innerHTML = `
+        <div class="thumbnail-container" onclick="window.open('${model.video}', '_blank')">
+          <img src="${model.img}" class="thumbnail" alt="${model.name}">
+          <div class="play-overlay">▶</div>
+        </div>
+        <div class="model-info">
+          <div class="model-name">${model.name}</div>
+          <div class="status">LIVE</div>
+          <button class="chat-btn" onclick="event.stopImmediatePropagation(); window.open('https://www.lbfmcams.com/onnow.php?wid=104247&cid=100&rid=1', '_blank')">
+            💬 Chat Now
+          </button>
+        </div>
+      `;
+      return card;
+    }
+
+    document.getElementById('models-grid').append(...models.map(createCard));
+  </script>
+</body>
+</html>
